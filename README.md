@@ -13,8 +13,7 @@ It loads and shows all serch video track.
 ### Libraries:  
 * Architecture Components: [Room](https://developer.android.com/reference/android/arch/persistence/room/package-summary.html) + 
 * [RxJava 2](https://github.com/ReactiveX/RxJava) + [RxAndroid](https://github.com/ReactiveX/RxAndroid)
-* [ButterKnife](https://github.com/JakeWharton/butterknife)
-* [Retrofit](https://github.com/square/retrofit) + [OkHttp](https://github.com/square/okhttp)
+* [Retrofit](https://github.com/square/retrofit)
 * [Glide](https://github.com/bumptech/glide)
 * UI: RecyclerView, CardView, ConstraintLayout.
 
