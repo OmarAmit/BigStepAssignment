@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:strokeColor="@color/colorPrimaryDark"
+                    app:strokeWidth="1dp">
+                    <!--    android:outlineSpotShadowColor="@color/transparent"
+                    app:cardBackgroundColor="@color/gen_white"
+                    app:cardCornerRadius="@dimen/_6sdp"-->
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/leader_board_tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fillViewport="true"
+                        app:tabBackground="@drawable/tab_selector"
+                        app:tabGravity="fill"
+                        app:tabIndicator="@android:color/transparent"
+                        app:tabIndicatorFullWidth="false"
+                        app:tabIndicatorGravity="stretch"
+                        app:tabMaxWidth="0dp"
+                        app:tabMode="fixed"
+                        app:tabRippleColor="@null"
+                        app:tabSelectedTextColor="@color/white"
+                        app:tabTextColor="@color/colorPrimary" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vpMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
